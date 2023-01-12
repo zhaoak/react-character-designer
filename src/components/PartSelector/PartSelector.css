@@ -1,0 +1,8 @@
+.part-selector {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+}
