@@ -1,0 +1,22 @@
+.char-display-container {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.head {
+  min-height: 50px;
+  max-height: 200px;
+}
+
+.torso {
+  min-height: 75px;
+  max-height: 300px;
+}
+
+.bottoms {
+  min-height: 75px;
+  max-height: 300px;
+}

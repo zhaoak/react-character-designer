@@ -33,6 +33,7 @@ export default function PartSelector({
       <label>
         head ({headChangeCounter} changes)
         <select onChange={changeHead}>
+          <option value={'generic'}>generic</option>
           <option value={'beau'}>beau</option>
           <option value={'delaney'}>delaney</option>
         </select>
@@ -41,6 +42,7 @@ export default function PartSelector({
       <label>
         torso ({torsoChangeCounter} changes)
         <select onChange={changeTorso}>
+          <option value={'generic'}>generic</option>
           <option value={'beau'}>beau</option>
           <option value={'delaney'}>delaney</option>
         </select>
@@ -49,6 +51,7 @@ export default function PartSelector({
       <label>
         bottoms ({bottomsChangeCounter} changes)
         <select onChange={changeBottoms}>
+          <option value={'generic'}>generic</option>
           <option value={'beau'}>beau</option>
           <option value={'delaney'}>delaney</option>
         </select>

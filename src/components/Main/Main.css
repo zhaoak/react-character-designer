@@ -1,3 +1,7 @@
+main {
+  background-color: whitesmoke;
+}
+
 .halves-container {
   text-align: center;
   display: flex;
