@@ -63,3 +63,4 @@ Nested bullet points indicate nested components.
     - Ask A TA text input component (stores text entry state data)
         - Ask A TA text display/response component
     - Part Display component (right side, displays images to represent selected body parts)
+    - Body Part Change Counter (not in diagram, positioned below everything else)
