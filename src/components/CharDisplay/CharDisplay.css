@@ -1,0 +1,30 @@
+.char-display-container {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  border: thick dotted grey;
+  margin: 1rem;
+}
+
+.head {
+  min-height: 50px;
+  max-height: 300px;
+  min-width: 50px;
+  max-width: 300px;
+}
+
+.torso {
+  min-height: 50px;
+  max-height: 300px;
+  min-width: 50px;
+  max-width: 300px;
+}
+
+.bottoms {
+  min-height: 50px;
+  max-height: 300px;
+  min-width: 50px;
+  max-width: 300px;
+}

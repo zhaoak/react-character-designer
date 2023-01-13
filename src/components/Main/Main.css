@@ -1,0 +1,25 @@
+main {
+  background-color: whitesmoke;
+}
+
+.halves-container {
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: inherit;
+}
+
+.left-sect {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.right-sect {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+}

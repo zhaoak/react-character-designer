@@ -1,0 +1,18 @@
+.part-selector {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  border: thick dotted grey;
+  margin: 1em;
+}
+
+label {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: space-around;
+  gap: 1em;
+}

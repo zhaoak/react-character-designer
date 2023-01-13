@@ -1,0 +1,38 @@
+.ask-a-ta {
+  border: thick dotted grey;
+  margin: 1em;
+}
+
+.ask-ta-input-area {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1em;
+}
+
+#ask-ta-chat-area {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: scroll;
+  height: fit-content;
+}
+
+.user-question-message-bubble {
+  align-self: flex-start;
+  border: thin solid slategray;
+  background-color: slategray;
+  color: white;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 0.7em;
+}
+
+.ta-response-message-bubble {
+  align-self: flex-end;
+  border: thin solid cornflowerblue;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 1em;
+  margin: 1em;
+  padding: 0.7em;
+}

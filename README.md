@@ -51,3 +51,16 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 ## Additional considerations
 - Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
 - Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+
+## Component Tree
+
+![wireframe diagram](./src/wireframe.png)
+
+Nested bullet points indicate nested components.
+
+- Main component (stores selected body parts state)
+    - Part selector component (calls setHead, setTorso, etc functions)
+    - Ask A TA text input component (stores text entry state data)
+        - Ask A TA text display/response component
+    - Part Display component (right side, displays images to represent selected body parts)
+    - Body Part Change Counter (not in diagram, positioned below everything else)
