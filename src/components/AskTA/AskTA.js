@@ -13,7 +13,7 @@ const generic_quotes = [
   "What's supposed to happen?",
 ];
 
-export default function AskTA({ head }) {
+export default function AskTA() {
   // stretch goal: different responses based on whose head
   const [chatLog, setChatLog] = useState([]);
   const submitQuestion = () => {

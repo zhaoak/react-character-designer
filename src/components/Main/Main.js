@@ -16,7 +16,7 @@ export default function Main() {
     <main className="halves-container">
       <section className="left-sect">
         <PartSelector setHead={setHead} setTorso={setTorso} setBottoms={setBottoms} />
-        <AskTA head={head} />
+        <AskTA />
       </section>
       <section className="right-sect">
         <CharDisplay head={head} torso={torso} bottoms={bottoms} />
