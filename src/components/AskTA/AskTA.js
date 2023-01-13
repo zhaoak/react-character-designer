@@ -14,6 +14,7 @@ const generic_quotes = [
 ];
 
 export default function AskTA({ head }) {
+  // stretch goal: different responses based on whose head
   const [chatLog, setChatLog] = useState([]);
   const submitQuestion = () => {
     // grab what the user typed
@@ -21,8 +22,18 @@ export default function AskTA({ head }) {
     // append it to the state, which in this case does nothing but stores it
     addToLog(textInput.value);
     // pick a random TA response, add it to log
-
+    const response = generic_quotes[Math.floor(Math.random() * generic_quotes.length)];
+    addToLog(response);
     // create and append new message bubbles with question and response to area for them
+    const questionBubble = document.createElement('p');
+    const answerBubble = document.createElement('p');
+    questionBubble.textContent = textInput.value;
+    answerBubble.textContent = response;
+    questionBubble.classList.add('user-question-message-bubble');
+    answerBubble.classList.add('ta-response-message-bubble');
+    const chatEl = document.getElementById('ask-ta-chat-area');
+    chatEl.append(questionBubble);
+    chatEl.append(answerBubble);
   };
 
   const addToLog = (thingToAdd) => {
@@ -36,11 +47,11 @@ export default function AskTA({ head }) {
     <section className="ask-a-ta">
       <div className="ask-ta-input-area">
         <h4>Ask A TA</h4>
-        <textarea id="user-question-input" />
+        <textarea id="user-question-input" rows="3" cols="40" />
         <button onClick={submitQuestion}>please help me!</button>
       </div>
       <hr />
-      <div className="ask-ta-chat-area"></div>
+      <div id="ask-ta-chat-area"></div>
     </section>
   );
 }
