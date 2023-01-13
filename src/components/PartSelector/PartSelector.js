@@ -3,13 +3,7 @@ import { useState } from 'react';
 
 import './PartSelector.css';
 
-export default function PartSelector({
-  setHead,
-  setTorso,
-  setBottoms,
-  setChangeCounter,
-  changeCounter,
-}) {
+export default function PartSelector({ setHead, setTorso, setBottoms }) {
   const [headChangeCounter, setHeadChangeCounter] = useState(0);
   const [torsoChangeCounter, setTorsoChangeCounter] = useState(0);
   const [bottomsChangeCounter, setBottomsChangeCounter] = useState(0);

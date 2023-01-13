@@ -1,0 +1,24 @@
+.ask-a-ta {
+  border: thick dotted grey;
+  margin: 1em;
+}
+
+.ask-ta-input-area {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1em;
+}
+
+.ask-ta-chat-area {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.user-question-message-bubble {
+  align-self: flex-end;
+}
+
+.ta-response-message-bubble {
+  align-self: flex-start;
+}
